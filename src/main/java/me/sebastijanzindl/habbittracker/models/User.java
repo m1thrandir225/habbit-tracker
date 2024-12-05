@@ -31,4 +31,30 @@ public class User {
 
     @OneToMany(mappedBy = "user")
     private List<HabitCheck> habitChecks;
+
+    public User() {}
+
+    public UUID getId() {
+        return id;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public String getName() {
+        return firstName + " " + lastName;
+    }
+
+    public String getPassword() {
+        return password;
+    }
 }
